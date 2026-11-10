@@ -6,9 +6,9 @@ import WindFabric from './WindFabric';
 function App() {
   const [reveal, setReveal] = React.useState(0);
   return <div className="page">
-    <header><a className="brand" href="./" aria-label="B’groceries home">B<span>’</span>GROCERIES<small>HYPERSTORE</small></a><span className="header-note">A little freshness. A whole lot of goodness.</span></header>
+    <header><a className="brand" href="./" aria-label="B’groceries home"><img src="/logo.jpg" alt="B&#8217;groceries Hyperstore" className="brand-logo" /></a><span className="header-note">A little freshness. A whole lot of goodness.</span></header>
     <main>
-      <div className="intro"><span className="dot"/> A NEW CHAPTER IN EVERYDAY GOODNESS</div><h1>Something fresh.<br/><em>Coming soon.</em></h1><div className="logo-wrap"><img src="/logo.jpg" alt="B’groceries Hyperstore" /></div>
+      <div className="intro"><span className="dot"/> A NEW CHAPTER IN EVERYDAY GOODNESS</div><h1>Something fresh.<br/><em>Coming soon.</em></h1>
       <section className="opening" aria-label="A preview of our upcoming store">
         <div className="store-stage" key={reveal}>
           <img className="storefront" src="/storefront.png" alt="B’groceries Hyperstore storefront" />
@@ -26,5 +26,6 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>);
+
 
 
